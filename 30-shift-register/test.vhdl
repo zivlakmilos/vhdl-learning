@@ -37,6 +37,9 @@ begin
     q => q
   );
   process begin
+    clr <= '1';
+    wait for 5 ns;
+    clr <= '0';
     wait;
   end process;
 end;
